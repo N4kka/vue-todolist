@@ -33,10 +33,10 @@
         </section>
         <div class="tasks">
             <ul class="todo-list">
-                <li v-for="value in toDoTasks" :class="value.done == true ? 'line-through' : '' ">
+                <li v-for="(value, index) in toDoTasks" :class="value.done == true ? 'line-through' : '' ">
                     {{value.text}}
                     <div class="todo-icon">
-
+                        <i class="fas fa-times" @click="removeTask(index)"></i>
                     </div>
                 </li>
             </ul>
