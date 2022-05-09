@@ -15,12 +15,29 @@
 </head>
 <body>
     
+    <!-- HEADER -->
+    <header>
+        <h1 class="br">To Do List &copy;</h1>
+    </header>
+    <!-- HEADER -->
+
     <!-- VUE START -->
     <div id="root">
+        <section class="filters">
+            <div class="filter-item">
+                <input class="br" type="text" placeholder="New ToDo" name="" id="">
+                <button class="br">Aggiungi</button>
+                <p>Filtra elementi per testo</p>
+                <input class="br" type="text" name="" id="">
+            </div>
+        </section>
         <div class="tasks">
             <ul class="todo-list">
-                <li v-for="(text) in toDoTasks">
-                    {{text}}
+                <li v-for="value in toDoTasks" :class="value.done == true ? 'line-through' : '' ">
+                    {{value.text}}
+                    <div class="todo-icon">
+
+                    </div>
                 </li>
             </ul>
         </div>

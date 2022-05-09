@@ -5,7 +5,7 @@ const app = new Vue (
             toDoTasks: [
                 {
                     text: "prendere un caffè",
-                    done: false
+                    done: true
                 },
                 {
                     text: "iniziare l'esercizio",
@@ -17,7 +17,7 @@ const app = new Vue (
                 },
                 {
                     text: "andare in palestra",
-                    done: false
+                    done: true
                 }
             ]
         },

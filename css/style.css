@@ -4,6 +4,54 @@
     box-sizing: border-box;
 }
 
-.tasks {
-    height: 100px;
+/* COMMON */
+ul {
+    list-style: none;
+}
+
+.br {
+    border-radius: 25px;
+}
+
+/* HEADER */
+header {
+    color: cornflowerblue;
+    margin: 2rem;
+}
+
+header h1 {
+    text-align: center;
+    border: 1px solid cornflowerblue;
+    padding: 15px;
+}
+
+/* MAIN */
+.filter-item {
+    text-align: center;
+}
+
+.filter-item input, button {
+    color: cornflowerblue;
+    text-align: center;
+    padding: 10px;
+}
+
+.todo-list {
+    background-color: lightgray;
+    height: 300px;
+}
+
+.tasks ul {
+    text-align: center;
+    padding-top: 2.5rem;
+    margin: 2rem;
+}
+
+.todo-list li {
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.line-through {
+    text-decoration: line-through;
 }
