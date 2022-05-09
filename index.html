@@ -25,8 +25,14 @@
     <div id="root">
         <section class="filters">
             <div class="filter-item">
-                <input class="br" type="text" placeholder="New ToDo" name="" id="">
-                <button class="br">Aggiungi</button>
+                <input
+                class="br" 
+                type="text" 
+                v-model="newTodo" 
+                @keyup.enter="addTask"
+                placeholder="New ToDo" 
+                >
+                <button class="br" @click="addTask">Aggiungi</button>
                 <p>Filtra elementi per testo</p>
                 <input class="br" type="text" name="" id="">
             </div>
